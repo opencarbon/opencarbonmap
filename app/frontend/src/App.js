@@ -50,15 +50,36 @@ let store = createStore(CarbonMapApp, applyMiddleware(thunk));
  */
 function Footer() {
   return (
-  <Typography variant="body2" color="textSecondary" align="center">
-      Energy Data from <a target="_new" style={{textDecoration: 'none'}} href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy">BEIS</a><br/>
-      Boundaries data: Contains National Statistics data © Crown copyright and database right 2020<br/>
-      Contains OS data © copyright and database right 2020<br/>
-      All data licensed under the <a target="_new" style={{textDecoration: 'none'}} href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">UK Open Government Licence</a> v.3.0<br/><br/>
-      <Link variant="button" href="https://github.com/opencarbon/opencarbonmap.git">
-          GitHub
-      </Link>
-  </Typography>
+    <div>
+
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={6}>
+          An <a target="_new" style={{textDecoration: "none"}} href="https://icebreakerone.org/">Icebreaker One</a> project<br/><br/>
+          <a target="_new" href="https://icebreakerone.org/">
+              <img alt="Icebreaker One" style={{ maxWidth: "90%", minWidth: "200px", height: "auto"}} src="/static/partners/01_IB1_Logo_Yellow_Roundel_Grey_Words_rgb_400x135.png" />
+          </a>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          Supported by <a target="_new" style={{textDecoration: "none"}} href="https://eit.europa.eu/">EIT Climate-KIC</a><br/><br/>
+          <a target="_new" href="https://eit.europa.eu/">
+              <img alt="EIT Climate-KIC" style={{ maxWidth: "90%", minWidth: "200px", height: "auto"}} src="/static/partners/EIT-Climate-KIC-EU-flag-transparent_400x138.png" />
+          </a>
+        </Grid>
+      </Grid>
+
+      <Typography variant="body2" color="textSecondary" align="center">
+        <br/>
+        Energy Data from <a target="_new" style={{textDecoration: 'none'}} href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy">BEIS</a><br/>
+        Boundaries data: Contains National Statistics data © Crown copyright and database right 2020<br/>
+        Contains OS data © copyright and database right 2020<br/>
+        All data licensed under the <a target="_new" style={{textDecoration: 'none'}} href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">UK Open Government Licence</a> v.3.0<br/><br/>
+        <Link variant="button" href="https://github.com/opencarbon/opencarbonmap.git">
+            GitHub
+        </Link>
+      </Typography>
+
+      </div>
+
   );
 }
 
